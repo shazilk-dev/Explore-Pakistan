@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore Pakistan - Tourist Spots</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-sA+e2bE2gkG2zYJsu3G4Y1A0yQ0h2a8bC+3mZ6Z8v6A="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">Explore Pakistan</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#map">Map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <h2>Discover the beauty and culture of Pakistan</h2>
+          <p>
+            From the mountains of Hunza to the beaches of Karachi — find places,
+            food, festivals and travel tips.
+          </p>
+          <a class="btn" href="#destinations">Explore Destinations</a>
+        </div>
+      </section>
+
+      <section id="destinations" class="container section">
+        <h2>Destination Highlights</h2>
+        <div class="cards">
+          <article class="card">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/d5/1c/94/passu-valley-hunza-valley.jpg?w=1200&h=-1&s=1"
+              alt="Hunza Valley"
+            />
+            <h3>Hunza Valley</h3>
+            <p>
+              Stunning mountain vistas, terraced fields and warm local
+              hospitality. A must-visit for nature lovers.
+            </p>
+            <a class="map-link" href="#map" data-place="Hunza">View on Map</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://akm-img-a-in.tosshub.com/sites/rd/resources/201908/lahore_1566551840_1200x675.png?size=684:384"
+              alt="Lahore Fort"
+            />
+            <h3>Lahore</h3>
+            <p>
+              Heart of Punjabi culture — history, food and lively festivals in
+              the old city.
+            </p>
+            <a class="map-link" href="#map" data-place="Lahore">View on Map</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPIVIFMOOZUzJxTCrHU1-q3TM2egCkav4-rw&s"
+              alt="Karachi Beach"
+            />
+            <h3>Karachi</h3>
+            <p>
+              Coastal city with busy markets, historic sites and long beaches —
+              a city & seaside combo.
+            </p>
+            <a class="map-link" href="#map" data-place="Karachi">View on Map</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://i.dawn.com/primary/2015/04/552534a77b507.jpg?r=961640394"
+              alt="Skardu"
+            />
+            <h3>Skardu</h3>
+            <p>
+              Gateway to high-altitude lakes and glaciers — great for trekking
+              and nature escapes.
+            </p>
+            <a class="map-link" href="#map" data-place="Skardu">View on Map</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=60"
+              alt="Multan"
+            />
+            <h3>Multan</h3>
+            <p>
+              Known as the City of Saints — rich in history, shrines and
+              traditional crafts.
+            </p>
+            <a class="map-link" href="#map" data-place="Multan">View on Map</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=60"
+              alt="Mohenjo-daro"
+            />
+            <h3>Mohenjo-daro</h3>
+            <p>
+              Ancient Indus Valley ruins — visit for archaeology and a glimpse
+              into early urban life.
+            </p>
+            <a class="map-link" href="#map" data-place="Mohenjo-daro"
+              >View on Map</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="culture" class="container section">
+        <h2>Cultural Insights</h2>
+        <div class="culture-grid">
+          <article class="culture-card">
+            <img
+              class="culture-img"
+              src="https://i.ytimg.com/vi/GliwQIYaaGg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnnlGhvt3gVrpdjolQ9DmMdJqBDA"
+              alt="Basant kites"
+            />
+            <div class="culture-body">
+              <h3>Festivals & Traditions</h3>
+              <p>
+                Pakistan has lively local festivals and long-standing
+                traditions. Popular events include:
+              </p>
+              <ul>
+                <li>
+                  <strong>Basant</strong> (kite festival in Punjab) — colourful,
+                  but check local safety rules.
+                </li>
+                <li>
+                  <strong>Urs</strong> — Sufi shrine celebrations with qawwali
+                  and community food.
+                </li>
+                <li>
+                  <strong>Weddings</strong> — multi-day events with music, dress
+                  and special food.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="culture-card">
+            <img
+              class="culture-img"
+              src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=60"
+              alt="Pakistani food"
+            />
+            <div class="culture-body">
+              <h3>Must-Try Foods</h3>
+              <p>
+                Try regional favourites — street food and home cooking are
+                highlights:
+              </p>
+              <ul>
+                <li>
+                  <strong>Biryani</strong> — aromatic rice and spiced meat
+                  (Karachi style popular).
+                </li>
+                <li>
+                  <strong>Nihari & Paya</strong> — slow-cooked breakfast stews.
+                </li>
+                <li>
+                  <strong>Sweets</strong> — jalebi, gulab jamun and barfi for
+                  dessert.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="tips" class="container section">
+        <h2>Travel Tips</h2>
+        <div class="tips-grid">
+          <div class="tip">
+            <h4>Transport</h4>
+            <p>
+              Intercity buses are affordable and common; domestic flights save
+              time for long distances. Book ahead during busy periods.
+            </p>
+          </div>
+          <div class="tip">
+            <h4>Accommodation</h4>
+            <p>
+              Guesthouses and budget hotels are easy to find; big cities also
+              have international chains. Check recent reviews before booking.
+            </p>
+          </div>
+          <div class="tip">
+            <h4>Safety & Customs</h4>
+            <p>
+              Dress modestly in conservative areas, avoid political
+              demonstrations, and ask locals for up-to-date advice.
+            </p>
+          </div>
+          <div class="tip">
+            <h4>Money & Connectivity</h4>
+            <p>
+              Carry some cash for markets; mobile data is widely available in
+              cities. Keep copies of important documents.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="container section">
+        <h2>User Gallery</h2>
+        <p>Share your photos and short stories about places you visited.</p>
+        <form id="uploadForm">
+          <label for="photo">Choose photo (jpg/png):</label>
+          <input type="file" id="photo" accept="image/*" required />
+          <label for="caption">Caption / Story (optional):</label>
+          <input
+            type="text"
+            id="caption"
+            maxlength="200"
+            placeholder="Short caption or story"
+          />
+          <button type="submit" class="btn">Upload</button>
+        </form>
+
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </section>
+
+      <section id="map" class="container section">
+        <h2>Interactive Map</h2>
+        <p>Popular spots across Pakistan — click markers for quick info.</p>
+        <div class="simple-map">
+          <iframe
+            title="Pakistan map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=60.0%2C23.0%2C78.0%2C37.0&layer=mapnik"
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            loading="lazy"
+          ></iframe>
+          <p class="map-note">
+            Simple map preview —
+            <a
+              href="https://www.openstreetmap.org/#map=5/30.3753/69.3451"
+              target="_blank"
+              rel="noopener"
+              >open full map</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Explore Pakistan — by sk. Created for Web Technologies
+          course.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-o9N1jz2k9rYpU5s+Qqkq0vLQb1s3f1b+K9j8wQ6kCwE="
+      crossorigin=""
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
